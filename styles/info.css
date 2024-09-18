@@ -1,0 +1,56 @@
+#info {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    margin-top: 52px;
+}
+
+/* Открой путь к знаниям и успеху */
+.info-inner h1 {
+    max-width: 642px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 62px;
+    line-height: normal;
+}
+
+/* Подготовка к ОГЭ и ЕГЭ по обществознанию */
+.info-inner h3 {
+    color: var(--text-blue);
+    font-size: 24px;
+}
+
+/* Запишитесь на бесплатную консультацию... */
+.info-inner p {
+    max-width: 469px;
+    margin-top: 100px;
+}
+
+
+/* Форма записи */
+.info-form {
+    width: min(421px, 100%);
+    margin-top: 16px;
+}
+
+.info-form .input-wrapper:last-of-type {
+    margin-top: 1px;
+}
+
+/* Кнопка "Отправить */
+.info-form button {
+    width: 100%;
+    margin-top: 8px;
+}
+
+
+.info-image {
+    width: 676px;
+    height: 474px;
+
+    position: absolute;
+    top: 0;
+    right: -31px;
+    z-index: -1;
+}
