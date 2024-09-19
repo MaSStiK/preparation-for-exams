@@ -1,16 +1,26 @@
 /* Helvetica Neue */
-@import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
+/* @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5"); */
 
 /* Comfortaa */
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
+/* Helvetica */
+@font-face {
+    font-family: "Helvetica";
+    src: url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff"),
+        url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"),
+        url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
+}
+
+
 :root {
-    --font-family: "Helvetica Neue", sans-serif;
+    --font-family: "Helvetica", sans-serif;
     --second-family: "Comfortaa", sans-serif;
 
     --text-black: #000000;
     --text-white: #ffffff;
     --text-blue: #006fff;
+    --text-green: #c7fc93;
 
     --content-width: 1312px;
 }
@@ -49,10 +59,27 @@ section {
     width: min(var(--content-width), 100%);
 }
 
+
+/* Блок с заголовком и нумерацией секции */
+.section-header {
+    width: min(var(--content-width), 100%);
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Заголовки секций */
 .section-title {
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 42px;
     line-height: normal;
+}
+
+/* Число элементов в секции */
+.section-number {
+    color: var(--text-green);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: normal;
+    font-style: italic;
 }

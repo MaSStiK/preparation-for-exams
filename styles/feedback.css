@@ -1,0 +1,65 @@
+#feedback {
+    width: 100%;
+    height: 482px;
+    padding-top: 96px;
+    border-radius: 26px;
+    background-color: var(--text-blue);
+}
+
+.feedback-inner {
+    width: min(var(--content-width), 100%);
+    display: flex;
+    gap: 38px;
+    margin: 0 auto;
+}
+
+.feedback-inner h2 {
+    font-weight: 700;
+    font-size: 56px;
+    color: var(--text-white);
+}
+
+.feedback-inner h3 {
+    width: 400px;
+    font-size: 28px;
+    color: var(--text-white);
+}
+
+.feedback-form {
+    width: 644px;
+}
+
+.feedback-form .input-wrapper:not(:first-of-type) {
+    margin-top: 2px;
+}
+
+.feedback-form .input-wrapper {
+    border-radius: 16px;
+}
+
+.feedback-form .input-wrapper input[type="text"] {
+    height: 57px;
+    font-size: 24px;
+
+}
+
+.feedback-form .input-wrapper label {
+    padding: 12px 8px;
+    font-size: 24px;
+}
+
+.feedback-form textarea {
+    height: 89px;
+    font-size: 24px;
+
+}
+
+.feedback-form button {
+    width: 100%;
+    height: 57px;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 24px;
+
+    margin-top: 16px;
+}

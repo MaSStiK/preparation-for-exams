@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./styles/info.css">
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/services.css">
+    <link rel="stylesheet" href="./styles/reviews.css">
+    <link rel="stylesheet" href="./styles/faq.css">
+    <link rel="stylesheet" href="./styles/feedback.css">
     <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
@@ -26,7 +29,7 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
-        <button id="header-call">Позвонить</button>
+        <button class="blue" id="header-call">Позвонить</button>
     </header>
 
     <main>
@@ -61,11 +64,11 @@
                                 required
                             >
                         </div>
-                        <button type="submit">Отправить</button>
+                        <button class="blue" type="submit">Отправить</button>
                     </form>
                 </div>
                 <div class="info-image">
-                    <img src="./assets/info.png" alt="info">
+                    <img src="./assets/info/info.png" alt="info">
                 </div>
             </section>
 
@@ -90,7 +93,7 @@
                                 <h4>1.</h4>
                                 <p>Более <span>2-х лет</span> оказываю услуги репетитора по истории и обществознанию для подготовки к&nbsp;ОГЭ&nbsp;и&nbsp;ЕГЭ</p>
                             </div>
-                            <div class="about__top-block">
+                            <div class="about__top-block bigger-text">
                                 <h4>2.</h4>
                                 <p>Большой опыт индивидуальной и групповой работы. <span>Более 50 подготовленных учеников</span></p>
                             </div>
@@ -98,7 +101,7 @@
                                 <h4>3.</h4>
                                 <p>Студент магистратуры <span>Санкт-Петербургского политехнического университета</span> Петра великого по направлению Экономика</p>
                             </div>
-                            <div class="about__top-block">
+                            <div class="about__top-block bigger-text">
                                 <h4>4.</h4>
                                 <p><span>Создатель авторских методик</span> и конспектов для легкого запоминания материала</p>
                             </div>
@@ -115,7 +118,193 @@
             </section>
 
             <section id="services">
-                <h2 class="section-title">Услуги</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Услуги</h2>
+                    <h2 class="section-number">(2)</h2>
+                </div>
+
+                <div class="services-container">
+                    <div class="service">
+                        <img src="./assets/services/1.png" alt="service">
+                        
+                        <div class="service__block">
+                            <ul>
+                                <li>Личный наставник</li>
+                                <li>Время занятия: 60 минут</li>
+                                <li>Проверка и разборы всех домашних заданий</li>
+                                <li>Плановые зачеты и пробные экзамены</li>
+                                <li>Постоянная мотивация!</li>
+                                <li>Все материалы в электронном виде</li>
+                            </ul>
+                            <p>1 500₽ за занятие</p>
+                        </div>
+                        <button class="blue">Записаться</button>
+                        <button class="gray">Подробнее</button>
+                    </div>
+                    <div class="service">
+                        <img src="./assets/services/2.png" alt="service">
+                        <div class="service__block">
+                            <ul>
+                                <li>Группа 3-4 человека</li>
+                                <li>Время занятия: 90 минут</li>
+                                <li>Проверка и разборы всех домашних заданий</li>
+                                <li>Плановые зачеты и пробные экзамены</li>
+                                <li>Постоянная мотивация!</li>
+                                <li>Все материалы в электронном виде</li>
+                            </ul>
+                            <p>2 000₽ за занятие</p>
+                        </div>
+                        <button class="blue">Записаться</button>
+                        <button class="gray">Подробнее</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reviews">
+                <div class="section-header">
+                    <h2 class="section-title">Отзывы</h2>
+                    <h2 class="section-number">(5)</h2>
+                </div>
+
+                <div class="reviews-wrapper">
+                    <div class="reviews-container">
+                        <div class="review">
+                            <div class="review__top">
+                                <div class="review__top-image">
+                                    <img src="./assets/reviews/photo.png" alt="review">
+                                </div>
+                                <div class="review__top-info">
+                                    <p>Вася Пупкин</p>
+                                    <img src="./assets/reviews/stars.svg" alt="stars">
+                                </div>
+                            </div>
+                            <p class="review__text">Я хочу поделиться своим опытом занятий с [Имя репетитора]. Я исключительно сознанием в течение [указного периода] и остался очень доволен результатом.<br>[Имя репетитора] Наши глубокие определения предмета и умение доступно объяснять сложные темы. Каждое занятие было структурированным и продуктивным, что помогло мне лучше усвоить материал и подготовиться к экзаменам.<br>Хочу выделить особый подход: [Имя репетитора] всегда наблюдает за моими слабыми местами и заставляет меня работать над ними. Благодаря его поддержке и рекомендациям я в значительной степени ограничиваю свои знания и уверенность в предмете.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review__top">
+                                <div class="review__top-image">
+                                    <img src="./assets/reviews/photo.png" alt="review">
+                                </div>
+                                <div class="review__top-info">
+                                    <p>Вася Пупкин</p>
+                                    <img src="./assets/reviews/stars.svg" alt="stars">
+                                </div>
+                            </div>
+                            <p class="review__text">Я хочу поделиться своим опытом занятий с [Имя репетитора]. Я исключительно сознанием в течение [указного периода] и остался очень доволен результатом.<br>[Имя репетитора] Наши глубокие определения предмета и умение доступно объяснять сложные темы. Каждое занятие было структурированным и продуктивным, что помогло мне лучше усвоить материал и подготовиться к экзаменам.<br>Хочу выделить особый подход: [Имя репетитора] всегда наблюдает за моими слабыми местами и заставляет меня работать над ними. Благодаря его поддержке и рекомендациям я в значительной степени ограничиваю свои знания и уверенность в предмете.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review__top">
+                                <div class="review__top-image">
+                                    <img src="./assets/reviews/photo.png" alt="review">
+                                </div>
+                                <div class="review__top-info">
+                                    <p>Вася Пупкин</p>
+                                    <img src="./assets/reviews/stars.svg" alt="stars">
+                                </div>
+                            </div>
+                            <p class="review__text">Я хочу поделиться своим опытом занятий с [Имя репетитора]. Я исключительно сознанием в течение [указного периода] и остался очень доволен результатом.<br>[Имя репетитора] Наши глубокие определения предмета и умение доступно объяснять сложные темы. Каждое занятие было структурированным и продуктивным, что помогло мне лучше усвоить материал и подготовиться к экзаменам.<br>Хочу выделить особый подход: [Имя репетитора] всегда наблюдает за моими слабыми местами и заставляет меня работать над ними. Благодаря его поддержке и рекомендациям я в значительной степени ограничиваю свои знания и уверенность в предмете.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review__top">
+                                <div class="review__top-image">
+                                    <img src="./assets/reviews/photo.png" alt="review">
+                                </div>
+                                <div class="review__top-info">
+                                    <p>Вася Пупкин</p>
+                                    <img src="./assets/reviews/stars.svg" alt="stars">
+                                </div>
+                            </div>
+                            <p class="review__text">Я хочу поделиться своим опытом занятий с [Имя репетитора]. Я исключительно сознанием в течение [указного периода] и остался очень доволен результатом.<br>[Имя репетитора] Наши глубокие определения предмета и умение доступно объяснять сложные темы. Каждое занятие было структурированным и продуктивным, что помогло мне лучше усвоить материал и подготовиться к экзаменам.<br>Хочу выделить особый подход: [Имя репетитора] всегда наблюдает за моими слабыми местами и заставляет меня работать над ними. Благодаря его поддержке и рекомендациям я в значительной степени ограничиваю свои знания и уверенность в предмете.</p>
+                        </div>
+                        <div class="review">
+                            <div class="review__top">
+                                <div class="review__top-image">
+                                    <img src="./assets/reviews/photo.png" alt="review">
+                                </div>
+                                <div class="review__top-info">
+                                    <p>Вася Пупкин</p>
+                                    <img src="./assets/reviews/stars.svg" alt="stars">
+                                </div>
+                            </div>
+                            <p class="review__text">Я хочу поделиться своим опытом занятий с [Имя репетитора]. Я исключительно сознанием в течение [указного периода] и остался очень доволен результатом.<br>[Имя репетитора] Наши глубокие определения предмета и умение доступно объяснять сложные темы. Каждое занятие было структурированным и продуктивным, что помогло мне лучше усвоить материал и подготовиться к экзаменам.<br>Хочу выделить особый подход: [Имя репетитора] всегда наблюдает за моими слабыми местами и заставляет меня работать над ними. Благодаря его поддержке и рекомендациям я в значительной степени ограничиваю свои знания и уверенность в предмете.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq">
+                <div class="section-header">
+                    <h2 class="section-title">Часто задаваемые вопросы</h2>
+                    <h2 class="section-number">(7)</h2>
+                </div>
+                <div class="questions">
+                    <div class="question">
+                        <button>Какие гарантии, что ребенок точно сдаст на хороший результат?</button>
+                        <p>На своем сайте я хочу быть откровенным и честным. Нет, обычно репетиторы не дают гарантий. Экзамен — сложный многоступенчатый процесс, случиться может всякое. Но я сделаю все, чтобы испытание прошло для вашего ребенка успешно, с минимальными потерями. Вместе с вашим ребенком мы будем работать усердно, чтобы добиться наилучших результатов в обучении обществознанию, но, пожалуйста, помните, что успех зависит также от учебной самодисциплины и учебной мотивации вашего ребенка.</p>
+                    </div>
+                    <div class="question">
+                        <button>Сколько времени у меня будет доступ к материалам урока?</button>
+                        <p>Доступ к материалам остается с Вами навсегда.</p>
+                    </div>
+                    <div class="question">
+                        <button>Подойдут ли занятия, если ребенок учится на “4” и “5”?</button>
+                        <p>Да, занятия со мной могут быть полезными даже для ученика, который получает оценки 4 и 5. Репетитор может помочь углубить знания, разъяснить сложные темы, предоставить дополнительные материалы и помочь подготовиться к экзаменам. Это может улучшить понимание предмета и повысить успеваемость.</p>
+                    </div>
+                    <div class="question">
+                        <button>Нужно ли дополнительно приобретать учебные пособия?</button>
+                        <p>Нет, никакие пособия покупать не придется, так как я предоставлю необходимую литературу в электронном виде.</p>
+                    </div>
+                    <div class="question">
+                        <button>Как родители могут отслеживать успеваемость ребенка?</button>
+                        <p>Родители всегда могут мне написать и задать все интересующие вопросы.</p>
+                    </div>
+                    <div class="question">
+                        <button>Как происходит оплата?</button>
+                        <p>Оплата происходит заранее (до занятия).<br>При оплате двух недель индивидуальных занятий вперед цена одного занятия составит 900 руб.<br><br>В групповых занятиях: при оплате двух недель стоимость занятия 800 руб.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="feedback">
+                <div class="feedback-inner">
+                    <div>
+                        <h2 class="section-title">Остались вопросы?</h2>
+                        <h3>Оставьте заявку и я свяжусь с вами в ближайшее время</h3>
+                    </div>
+                    <form class="feedback-form">
+                        <div class="input-wrapper">
+                            <label for="feedback-name">Имя</label>
+                            <input
+                                type="text"
+                                id="feedback-name"
+                                name="feedback-name"
+                                minlength="1"
+                                maxlength="100"
+                                required
+                            >
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="feedback-name">Телефон</label>
+                            <input
+                                type="text"
+                                id="feedback-phone"
+                                name="feedback-phone"
+                                minlength="11"
+                                maxlength="100"
+                                required
+                            >
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="feedback-question">Вопрос</label>
+                            <textarea
+                                id="feedback-question"
+                                name="feedback-question"
+                                maxlength="1000"
+                            ></textarea>
+                        </div>
+                        <button class="green" type="submit">Отправить</button>
+                    </form>
+                </div>
             </section>
         </article>
     </main>
@@ -150,5 +339,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <script src="./scripts/header-call.js"></script>
+    <script src="./scripts/faq.js"></script>
 </body>
 </html>

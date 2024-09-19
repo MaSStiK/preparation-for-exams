@@ -4,6 +4,10 @@
     --button-blue-active: #0062e0;
 
     --button-green: #c7fc93;
+    --button-green-hover: #c7fc93;
+
+    --button-gray: #f9f1ef;
+    --button-gray-hover: #f9f1ef;
 
     --button-disabled: #a6cdff;
 }
@@ -16,21 +20,30 @@ button {
     justify-content: center;
     align-items: center;
 
-    color: var(--text-white);
+    font-weight: 700;
 
-    outline: none;
     border: none;
     border-radius: 8px;
-    background-color: var(--button-blue);
 
     overflow: hidden;
     user-select: none;
     cursor: pointer;
 }
 
+button.blue {
+    color: var(--text-white);
+    background-color: var(--button-blue);
+}
+
 button.green {
     color: var(--text-black);
     background-color: var(--button-green);
+}
+
+button.gray {
+    color: var(--text-black);
+    background-color: var(--button-gray);
+    font-weight: 300;
 }
 
 /* Недоступная кнопка */
@@ -40,20 +53,26 @@ button:disabled {
     background-color: var(--button-disabled);
 }
 
+
 /* Наведение на пк */
 @media (hover: hover) {
-    button:hover,
-    button:focus-visible {
+    button.blue:hover,
+    button.blue:focus-visible {
         background-color: var(--button-blue-hover);
     }
 
-    button:active { /* Зажатие кнопки */
+    button.blue:active { /* Зажатие кнопки */
         background: var(--button-blue-active);
     }
 
     button.green:hover,
     button.green:focus-visible {
-        background-color: var(--button-hover-green);
+        background-color: var(--button-green-hover);
+    }
+
+    button.gray:hover,
+    button.gray:focus-visible {
+        background-color: var(--button-gray-hover);
     }
 
     button:disabled:hover,
@@ -65,12 +84,16 @@ button:disabled {
 
 /* Нажатие на телефоне */
 @media (hover: none) {
-    button:active {
+    button.blue:active {
         background-color: var(--button-blue-hover);
     }
 
     button.green:active {
-        background-color: var(--button-hover-green);
+        background-color: var(--button-green-hover);
+    }
+
+    button.gray:active {
+        background-color: var(--button-hover-gray);
     }
 
     button:disabled:active {

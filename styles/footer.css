@@ -45,6 +45,7 @@ footer {
 
 /* Политика конфиденциальности */
 #footer-privacy-policy {
+    width: fit-content;
     font-size: 16px;
     color: var(--text-white);
     text-decoration: underline;
