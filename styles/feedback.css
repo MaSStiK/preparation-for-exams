@@ -10,51 +10,66 @@
     width: min(var(--content-width), 100%);
     display: flex;
     gap: 38px;
+    position: relative;
     margin: 0 auto;
 }
 
+/* Фигура на заднем фоне */
+.feedback__bg {
+    position: absolute;
+    top: 160px;
+    left: 157px;
+    z-index: 0;
+}
+
+
+/* Остались вопросы? */
 .feedback-inner h2 {
     font-weight: 700;
     font-size: 56px;
     color: var(--text-white);
 }
 
+/* Оставьте заявку... */
 .feedback-inner h3 {
     width: 400px;
+    letter-spacing: 0.6px;
     font-size: 28px;
     color: var(--text-white);
 }
 
-.feedback-form {
+
+/* Форма обратной связи */
+.feedback__form {
     width: 644px;
 }
 
-.feedback-form .input-wrapper:not(:first-of-type) {
+.feedback__form .input-wrapper:not(:first-of-type) {
     margin-top: 2px;
 }
 
-.feedback-form .input-wrapper {
+.feedback__form .input-wrapper {
     border-radius: 16px;
 }
 
-.feedback-form .input-wrapper input[type="text"] {
+.feedback__form .input-wrapper input[type="text"] {
     height: 57px;
     font-size: 24px;
 
 }
 
-.feedback-form .input-wrapper label {
+.feedback__form .input-wrapper label {
     padding: 12px 8px;
     font-size: 24px;
 }
 
-.feedback-form textarea {
+.feedback__form textarea {
     height: 89px;
     font-size: 24px;
-
 }
 
-.feedback-form button {
+/* Кнопка "Отправить" */
+.feedback__form button {
     width: 100%;
     height: 57px;
     border-radius: 16px;

@@ -27,23 +27,23 @@
 
 
 /* Форма записи */
-.info-form {
+.info__form {
     width: min(421px, 100%);
     margin-top: 16px;
 }
 
-.info-form .input-wrapper:last-of-type {
+.info__form .input-wrapper:last-of-type {
     margin-top: 1px;
 }
 
 /* Кнопка "Отправить */
-.info-form button {
+.info__form button {
     width: 100%;
     margin-top: 8px;
 }
 
 
-.info-image {
+.info__image {
     width: 676px;
     height: 474px;
 
