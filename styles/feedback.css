@@ -44,22 +44,22 @@
     width: 644px;
 }
 
-.feedback__form .input-wrapper:not(:first-of-type) {
+.feedback__form .input-wrapper {
+    border-radius: 16px;
     margin-top: 2px;
 }
 
-.feedback__form .input-wrapper {
-    border-radius: 16px;
-}
-
-.feedback__form .input-wrapper input[type="text"] {
+.feedback__form input[type="text"] {
     height: 57px;
     border-radius: 16px;
     font-size: 24px;
-
 }
 
-.feedback__form .input-wrapper label {
+.feedback__form input[type="text"]::placeholder {
+    font-size: 24px;
+}
+
+.feedback__form label {
     padding: 12px 8px;
     font-size: 24px;
 }
@@ -68,6 +68,8 @@
     height: 89px;
     border-radius: 16px;
     font-size: 24px;
+
+    margin-top: 2px;
 }
 
 /* Кнопка "Отправить" */

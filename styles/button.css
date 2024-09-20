@@ -8,9 +8,10 @@
     --button-green-active: #b1ff65;
 
     --button-gray: #f9f1ef;
-    --button-gray-hover: #f9f1ef;
+    --button-gray-hover: #f1e7e5;;
+    --button-gray-active: #f9f1ef;
 
-    --button-disabled: #a6cdff;
+    --button-disabled: #f0e6e4;;
 }
 
 button {
@@ -78,6 +79,10 @@ button:disabled {
     button.gray:hover,
     button.gray:focus-visible {
         background-color: var(--button-gray-hover);
+    }
+
+    button.gray:active { /* Зажатие кнопки */
+        background-color: var(--button-gray-active);
     }
 
     button:disabled:hover,

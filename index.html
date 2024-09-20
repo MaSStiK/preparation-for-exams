@@ -41,26 +41,24 @@
                     <p>Запишитесь на бесплатную консультацию и убедитесь, что ваш ребенок попадет в правильные руки</p>
                     
                     <form class="info__form">
+                        <input
+                            type="text"
+                            placeholder="Имя"
+                            id="info-name"
+                            name="info-name"
+                            minlength="1"
+                            maxlength="100"
+                            required
+                        >
                         <div class="input-wrapper">
-                            <label for="info-name">Имя</label>
-                            <input
-                                type="text"
-                                id="info-name"
-                                name="info-name"
-                                minlength="1"
-                                maxlength="100"
-                                required
-                            >
-                        </div>
-                        <div class="input-wrapper">
-                            <label for="info-name">+7</label>
+                            <label for="info-phone">+7</label>
                             <input
                                 type="text"
                                 placeholder="000 000 00 00"
                                 id="info-phone"
                                 name="info-phone"
-                                minlength="11"
-                                maxlength="100"
+                                minlength="10"
+                                maxlength="10"
                                 required
                             >
                         </div>
@@ -235,7 +233,7 @@
             <section id="faq">
                 <div class="section-header">
                     <h2 class="section-title">Часто задаваемые вопросы</h2>
-                    <h2 class="section-number">(7)</h2>
+                    <h2 class="section-number">(6)</h2>
                 </div>
                 <div class="questions">
                     <div class="question">
@@ -279,36 +277,33 @@
                     </div>
 
                     <form class="feedback__form">
+                        <input
+                            type="text"
+                            placeholder="Имя"
+                            id="feedback-name"
+                            name="feedback-name"
+                            minlength="1"
+                            maxlength="100"
+                            required
+                        >
                         <div class="input-wrapper">
-                            <label for="feedback-name">Имя</label>
+                            <label for="feedback-phone">+7</label>
                             <input
                                 type="text"
-                                id="feedback-name"
-                                name="feedback-name"
-                                minlength="1"
-                                maxlength="100"
-                                required
-                            >
-                        </div>
-                        <div class="input-wrapper">
-                            <label for="feedback-name">Телефон</label>
-                            <input
-                                type="text"
+                                placeholder="000 000 00 00"
                                 id="feedback-phone"
                                 name="feedback-phone"
-                                minlength="11"
-                                maxlength="100"
+                                minlength="10"
+                                maxlength="10"
                                 required
                             >
                         </div>
-                        <div class="input-wrapper">
-                            <label for="feedback-question">Вопрос</label>
-                            <textarea
-                                id="feedback-question"
-                                name="feedback-question"
-                                maxlength="1000"
-                            ></textarea>
-                        </div>
+                        <textarea
+                            placeholder="Вопрос"
+                            id="feedback-question"
+                            name="feedback-question"
+                            maxlength="1000"
+                        ></textarea>
                         <button class="green" type="submit">Отправить</button>
                     </form>
                 </div>
