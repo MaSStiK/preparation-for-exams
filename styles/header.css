@@ -32,3 +32,17 @@ nav li a {
     font-size: 14px;
     font-weight: 300;
 }
+
+/* Кнопка отрытия мобильного меню */
+#open-menu {
+    display: none;
+    width: 36px;
+    height: 30px;
+    padding: 0;
+    background-color: transparent;
+}
+
+#open-menu img {
+    width: 36px;
+    height: 30px;
+}

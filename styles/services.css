@@ -18,12 +18,14 @@
     width: 421px;
     height: 260px;
     border-radius: 16px;
+    z-index: 1;
 }
 
 .service__block {
     width: 100%;
     position: relative;
     padding: 28px 4px 21px 19px;
+    margin-top: -16px;
 }
 
 /* Градиентная обводка */

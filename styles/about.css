@@ -12,6 +12,15 @@
     z-index: -1;
 }
 
+/* Фигура на заднем фоне в моб. версии */
+.about__bg-phone {
+    display: none;
+    position: absolute;
+    top: 123px;
+    left: 0;
+    z-index: -1;
+}
+
 
 /* Верхняя часть секции */
 .about__top {
@@ -30,16 +39,10 @@
     line-height: 1.4em;
 }
 
-/* Высокие результаты занятий... */
-.about__top-inner > p:last-of-type {
-    font-size: 18px;
-    letter-spacing: -0.006em;
-    margin-top: 37px;
-}
-
 /* Синий цвет выделенного текста */
 .about__top-inner p span {
     font-size: inherit;
+    letter-spacing: inherit;
     color: var(--text-blue);
 }
 
@@ -64,6 +67,7 @@
 /* Нумерация блоков */
 .about__top-block h4 {
     font-size: 16px;
+    font-weight: 700;
     color: #0065e8;
     margin-top: 2px;
 }
@@ -71,6 +75,25 @@
 /* Текст блока */
 .about__top-block p {
     font-size: 16px;
+    letter-spacing: -0.01em;
+}
+
+
+/* Последний элемент во всю строку */
+.about__top-block:last-of-type {
+    width: 100%;
+    border-top: none;
+    margin-top: -7px;
+}
+
+/* Высокие результаты занятий... */
+.about__top-block:last-of-type p {
+    font-size: 18px;
+}
+
+/* Скрываем нумерацию у последнего элемента */
+.about__top-block:last-of-type h4 {
+    display: none;
 }
 
 /* Галерея */

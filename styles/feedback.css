@@ -11,6 +11,7 @@
     display: flex;
     gap: 38px;
     position: relative;
+    overflow: hidden;
     margin: 0 auto;
 }
 
@@ -19,6 +20,16 @@
     position: absolute;
     top: 160px;
     left: 157px;
+    z-index: 0;
+}
+
+
+/* Фигура на заднем фоне в моб. версии */
+.feedback__bg-phone {
+    display: none;
+    position: absolute;
+    top: 17px;
+    right: -15px;
     z-index: 0;
 }
 

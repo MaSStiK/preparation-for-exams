@@ -1,0 +1,63 @@
+@media screen and (max-width: 500px) {
+    #feedback {
+        height: auto;
+        padding: 25px 14px 34px 14px;
+    }
+
+    .feedback-inner {
+        flex-direction: column;
+        gap: 87px;
+    }
+    
+    /* Фигура на заднем фоне */
+    .feedback__bg {
+        display: none;
+    }
+
+    /* Фигура на заднем фоне в моб. версии */
+    .feedback__bg-phone {
+        display: block;
+    }
+    
+    
+    /* Остались вопросы? */
+    .feedback-inner h2 {
+        font-size: 32px;
+    }
+    
+    /* Оставьте заявку... */
+    .feedback-inner h3 {
+        width: auto;
+        font-size: 16px;
+    }
+    
+    
+    /* Форма обратной связи */
+    .feedback__form {
+        width: 100%;
+    }
+    
+    .feedback__form input[type="text"] {
+        height: 46px;
+        font-size: 16px;
+    }
+    
+    .feedback__form input[type="text"]::placeholder {
+        font-size: 16px;
+    }
+    
+    .feedback__form label {
+        padding: 12px 8px;
+        font-size: 16px;
+    }
+    
+    .feedback__form textarea {
+        font-size: 16px;
+    }
+    
+    /* Кнопка "Отправить" */
+    .feedback__form button {
+        height: 46px;
+        font-size: 16px;
+    }
+}

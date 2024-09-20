@@ -32,6 +32,13 @@ button {
     cursor: pointer;
 }
 
+@media screen and (max-width: 500px) {
+    button {
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
 button.blue {
     color: var(--text-white);
     background-color: var(--button-blue);
@@ -45,7 +52,6 @@ button.green {
 button.gray {
     color: var(--text-black);
     background-color: var(--button-gray);
-    font-weight: 300;
 }
 
 /* Недоступная кнопка */

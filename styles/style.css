@@ -83,3 +83,30 @@ section {
     line-height: normal;
     font-style: italic;
 }
+
+
+@media screen and (max-width: 500px) {
+    * {
+        font-size: 14px;
+    }
+
+    main {
+        margin-top: 27px;
+    }
+
+    article {
+        gap: 46px;
+    }
+
+    /* Отступ от краев */
+    section {
+        padding: 0 16px;
+    }
+
+    /* Заголовки секций */
+    /* Число элементов в секции */
+    .section-title,
+    .section-number {
+        font-size: 30px;
+    }
+}

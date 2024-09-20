@@ -1,0 +1,18 @@
+@media screen and (max-width: 500px) {
+    header {
+        height: auto;
+        padding: 16px 14px 0 14px;
+        box-sizing: border-box;
+        align-items: flex-start;
+    }
+
+    /* Скрываем навигацию */
+    nav {
+        display: none;
+    }
+
+    /* Показываем кнопку */
+    #open-menu {
+        display: block;
+    }
+}
