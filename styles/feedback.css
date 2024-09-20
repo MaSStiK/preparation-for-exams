@@ -33,7 +33,7 @@
 /* Оставьте заявку... */
 .feedback-inner h3 {
     width: 400px;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.02em;
     font-size: 28px;
     color: var(--text-white);
 }
