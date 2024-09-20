@@ -54,6 +54,7 @@
 
 .feedback__form .input-wrapper input[type="text"] {
     height: 57px;
+    border-radius: 16px;
     font-size: 24px;
 
 }
@@ -65,6 +66,7 @@
 
 .feedback__form textarea {
     height: 89px;
+    border-radius: 16px;
     font-size: 24px;
 }
 

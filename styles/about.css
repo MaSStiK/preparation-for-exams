@@ -7,8 +7,8 @@
 /* Фигура на заднем фоне */
 .about__bg {
     position: absolute;
-    top: -52px;
-    left: -210px;
+    top: -54px;
+    left: -65px;
     z-index: -1;
 }
 
@@ -71,12 +71,6 @@
 .about__top-block p {
     font-size: 16px;
 }
-
-/* У 2 и 4 блока больше шрифт */
-.about__top-block.bigger-text p {
-    font-size: 18px;
-}
-
 
 /* Галерея */
 .about__gallery {

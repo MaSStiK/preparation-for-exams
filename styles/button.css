@@ -4,7 +4,8 @@
     --button-blue-active: #0062e0;
 
     --button-green: #c7fc93;
-    --button-green-hover: #c7fc93;
+    --button-green-hover: #c0f48d;
+    --button-green-active: #b1ff65;
 
     --button-gray: #f9f1ef;
     --button-gray-hover: #f9f1ef;
@@ -70,6 +71,10 @@ button:disabled {
         background-color: var(--button-green-hover);
     }
 
+    button.green:active { /* Зажатие кнопки */
+        background-color: var(--button-green-active);
+    }
+
     button.gray:hover,
     button.gray:focus-visible {
         background-color: var(--button-gray-hover);
@@ -85,11 +90,11 @@ button:disabled {
 /* Нажатие на телефоне */
 @media (hover: none) {
     button.blue:active {
-        background-color: var(--button-blue-hover);
+        background-color: var(--button-blue-active);
     }
 
     button.green:active {
-        background-color: var(--button-green-hover);
+        background-color: var(--button-green-active);
     }
 
     button.gray:active {

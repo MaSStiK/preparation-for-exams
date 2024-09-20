@@ -1,4 +1,4 @@
-$(".question button").on("click tap", (event) => {
-    $(event.target).parent().siblings().removeClass("opened");
-    $(event.target).parent().toggleClass("opened");
+$(".question button").on("click tap", function() {
+    $(this).parent().siblings().removeClass("opened");
+    $(this).parent().toggleClass("opened");
 })

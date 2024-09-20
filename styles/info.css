@@ -44,11 +44,11 @@
 
 
 .info__image {
-    width: 676px;
-    height: 474px;
+    width: 506px;
+    height: 505px;
 
     position: absolute;
-    top: 0;
-    right: -31px;
+    top: -44px;
+    right: 135px;
     z-index: -1;
 }
