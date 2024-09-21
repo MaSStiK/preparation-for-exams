@@ -30,11 +30,12 @@
     
     border-radius: 16px;
     background-color: transparent;
+}
 
+.question button p {
     font-weight: 300;
     color: var(--text-black);
     font-size: 28px;
-    text-align: left;
 }
 
 /* Звездочка */
@@ -71,11 +72,6 @@
 
     /* Отключаем взаимодействие */
     pointer-events: none
-}
-
-/* Отключаем перенос строки */
-.question button br {
-    display: none;
 }
 
 /* Ответ */

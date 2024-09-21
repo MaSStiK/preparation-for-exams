@@ -26,9 +26,18 @@
         height: auto;
         padding: 4px 24px 4px 17px;
         border-radius: 4px;
-        
+    }
+
+    /* Делаем текст вопроса короче */
+    .question button p {
+        max-width: 300px;
         text-align: left;
         font-size: 12px;
+    }
+
+    /* Укороченный вопрос */
+    .question.question_short button p {
+        max-width: 250px;
     }
     
     /* Звездочка */
@@ -52,15 +61,6 @@
     /* У последнего вопроса стрелочка выше */
     .question:last-of-type button::before {
         top: 7px;
-    }
-
-    /* Делаем текст вопроса короче */
-    .question button p {
-        max-width: 350px;
-    }
-
-    .question.question_short button p {
-        max-width: 280px;
     }
     
     /* Ответ */
