@@ -14,6 +14,11 @@ nav {
     height: 22px;
 }
 
+/* Скрываем соц сети из навигации */
+.nav-social-networks {
+    display: none;
+}
+
 nav ul {
     display: flex;
     gap: 24px;
