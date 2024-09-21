@@ -87,6 +87,13 @@ section {
     font-style: italic;
 }
 
+/* Ошибка в форме */
+.form-error {
+    font-size: 16px;
+    color: #FF0000;
+    margin-top: 8px;
+}
+
 
 /* Моб. версия */
 @media screen and (max-width: 980px) {
@@ -113,5 +120,10 @@ section {
     .section-title,
     .section-number {
         font-size: 30px;
+    }
+
+    /* Ошибка в форме */
+    .form-error {
+        font-size: 14px;
     }
 }

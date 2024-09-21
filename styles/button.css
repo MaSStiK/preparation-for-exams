@@ -58,7 +58,7 @@ button.gray {
 /* Недоступная кнопка */
 button:disabled {
     cursor: not-allowed;
-    color: #e7e7e7;
+    color: #afafaf;
     background-color: var(--button-disabled);
 }
 

@@ -83,6 +83,12 @@
     margin-top: 2px;
 }
 
+/* Ошибка формы */
+#feedback-form-error {
+    color: var(--text-white);
+    font-size: 24px;
+}
+
 /* Кнопка "Отправить" */
 .feedback__form button {
     width: 100%;
