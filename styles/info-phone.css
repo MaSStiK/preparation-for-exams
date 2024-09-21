@@ -1,8 +1,23 @@
-@media screen and (max-width: 500px) {
+/* Уменьшаем фото и сдвигаем в право */
+@media screen and (max-width: 1220px) {
+    .info__image {
+        width: auto;
+        height: 100%;
+    
+        top: 0px;
+        right: 0px;
+    }
+}
+
+/* Моб. версия */
+@media screen and (max-width: 980px) {
     #info {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
+        
+        justify-content: center;
+    }
+
+    .info-inner {
+        width: min(420px, 100%);
     }
     
     /* Открой путь к знаниям и успеху */

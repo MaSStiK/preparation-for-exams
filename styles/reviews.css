@@ -2,13 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    /* Отключаем pudding снаружи и ставим его внутри блоков
+    для прокрутка комментариев была от края до края */
+    padding: 0;
+}
+
+#reviews .section-header {
+    padding: 0 16px;
 }
 
 /* Контейнер с отзывами */
 .reviews-container {
     width: 100%;
+    padding: 0 16px;
     display: flex;
     gap: 24px;
+    overflow: auto;
     margin-top: 60px;
 }
 

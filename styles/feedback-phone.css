@@ -1,10 +1,20 @@
-@media screen and (max-width: 500px) {
+/* Двигаем фигуру на заднем фоне */
+@media screen and (max-width: 1360px) {
+    .feedback__bg {
+        top: 197px;
+        left: 90px;
+    }
+}
+
+/* Моб. версия */
+@media screen and (max-width: 980px) {
     #feedback {
         height: auto;
         padding: 25px 14px 34px 14px;
     }
 
     .feedback-inner {
+        width: min(420px, 100%);
         flex-direction: column;
         gap: 87px;
     }
@@ -47,7 +57,7 @@
     }
     
     .feedback__form label {
-        padding: 12px 8px;
+        padding: 12px 0 12px 8px;
         font-size: 16px;
     }
     

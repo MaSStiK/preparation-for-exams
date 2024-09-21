@@ -1,11 +1,13 @@
-@media screen and (max-width: 500px) {
+/* Моб. версия */
+@media screen and (max-width: 980px) {
     /* Скрываем кол-во элементов */
     #faq .section-number {
         display: none;
     }
 
     .questions {
-        margin-top: 24px;
+        width: min(420px, 100%);
+        margin: 24px auto 0 auto;
     }
     
     .question {
@@ -18,29 +20,14 @@
         max-height: 24px;
     }
     
-    /* Стрелочка */
-    .question::after {
-        width: 11px;
-        height: 11px;
-        top: 20px;
-        right: 2px;
-        background-size: 11px 7px;
-    }
-
-    /* У последнего вопроса стрелочка выше */
-    .question:last-of-type::after {
-        top: 7px;
-    }
-    
     /* Текст вопроса */
     .question button {
         width: 100%;
         height: auto;
-        text-align: left;
         padding: 4px 17px;
-        
         border-radius: 4px;
-    
+        
+        text-align: left;
         font-size: 12px;
     }
     
@@ -48,9 +35,23 @@
     .question button::after {
         width: 6px;
         height: 6px;
-        top: 8px;
+        top: 10px;
         left: 6px;
         background-size: 6px 6px;
+    }
+
+    /* Стрелочка */
+    .question button::before {
+        width: 11px;
+        height: 11px;
+        top: 20px;
+        right: 6px;
+        background-size: 11px 7px;
+    }
+
+    /* У последнего вопроса стрелочка выше */
+    .question:last-of-type button::before {
+        top: 7px;
     }
 
     /* Включаем перенос строки */

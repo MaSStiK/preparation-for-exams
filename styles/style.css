@@ -22,7 +22,8 @@
     --text-blue: #006fff;
     --text-green: #c7fc93;
 
-    --content-width: 1312px;
+    /* 1312 + 16 + 16 */
+    --content-width: 1344px;
 }
 
 * {
@@ -45,6 +46,7 @@
 }
 
 main {
+    overflow-x: hidden;
     margin-top: 52px;
 }
 
@@ -57,6 +59,7 @@ article {
 
 section {
     width: min(var(--content-width), 100%);
+    padding: 0 16px;
 }
 
 
@@ -85,7 +88,8 @@ section {
 }
 
 
-@media screen and (max-width: 500px) {
+/* Моб. версия */
+@media screen and (max-width: 980px) {
     * {
         font-size: 14px;
     }
@@ -98,9 +102,10 @@ section {
         gap: 46px;
     }
 
-    /* Отступ от краев */
-    section {
-        padding: 0 16px;
+
+    .section-header {
+        width: min(420px, 100%);
+        margin: 0 auto;
     }
 
     /* Заголовки секций */

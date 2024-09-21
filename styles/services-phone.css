@@ -1,12 +1,14 @@
-@media screen and (max-width: 500px) {
+/* Моб. версия */
+@media screen and (max-width: 980px) {
     .services-container {
         flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
         margin-top: 24px;
     }
     
     .service {
-        width: 100%;
+        width: min(420px, 100%);
     }
     
     .service img {
@@ -26,15 +28,12 @@
     .service__block {
         padding-top: 32px;
         padding-bottom: 24px;
+        margin-top: -19px;
     }
     
     .service__block li {
         padding-left: 18px;
         font-size: 18px;
-    }
-
-    .service__block {
-        margin-top: -3.8vw;
     }
     
     /* Звездочка слева от пунктов */
@@ -46,5 +45,12 @@
     .service__block p {
         font-size: 20px;
         margin-top: 38px;
+    }
+}
+
+/* Меняем отрицательный отступ от блока до картинки */
+@media screen and (max-width: 500px) {
+    .service__block {
+        margin-top: -3.8vw;
     }
 }
