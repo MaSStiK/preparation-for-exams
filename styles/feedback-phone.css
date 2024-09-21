@@ -71,3 +71,20 @@
         font-size: 16px;
     }
 }
+
+/* Уменьшаем заголовки */
+@media screen and (max-width: 403px) {
+    .feedback-inner h2 {
+        font-size: 26px;
+    }
+
+    .feedback-inner h3 {
+        padding-right: 50px
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .feedback-inner {
+        gap: 60px;
+    }
+}
