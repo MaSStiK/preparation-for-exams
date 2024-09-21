@@ -12,11 +12,8 @@
 /* Моб. версия */
 @media screen and (max-width: 980px) {
     #info {
-        
         -webkit-box-pack: center;
-        
             -ms-flex-pack: center;
-        
                 justify-content: center;
     }
 

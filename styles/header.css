@@ -3,9 +3,7 @@ header {
     padding: 24px 16px 0 16px;
     
     display: -webkit-box;
-    
     display: -ms-flexbox;
-    
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
