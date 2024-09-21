@@ -1,3 +1,10 @@
+// Переход на форму
+$(".service-link").on("click tap", () => {
+    document.querySelector("#feedback").scrollIntoView({behavior: "smooth"})
+    $(".feedback__form > input:first-of-type").focus() // Фокусируем пользователя на первом инпуте
+})
+
+// Открытие модального окна с подробной информацией
 $("#service-open-1, #service-open-2").on("click tap", function() {
     // В зависимости от кнопки показываем текст
     if ($(this).attr("id").endsWith("1")) {
@@ -24,6 +31,7 @@ $("#service-open-1, #service-open-2").on("click tap", function() {
     })
 })
 
+// Закрытие модального окна
 $("#dialog-close").on("click tap", () => {
     // Возвращаем прокрутку и скрываем модальное окно
     $("body").css("overflow", "auto")
