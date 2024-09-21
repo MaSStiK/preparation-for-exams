@@ -54,9 +54,8 @@ $(".info__form").submit((event) => {
             answer: formQuestion
         }
         
-        // Функция авторизации
         $.ajax({
-            url: "http://127.0.0.1:5000/people",
+            url: urlPostPeople,
             method: "POST",
             data: JSON.stringify(data),
             contentType: 'application/json; charset=utf-8',

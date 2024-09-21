@@ -32,9 +32,8 @@ $(".feedback__form").submit((event) => {
             answer: formQuestion
         }
         
-        // Функция авторизации
         $.ajax({
-            url: "http://127.0.0.1:5000/people",
+            url: urlPostPeople,
             method: "POST",
             data: JSON.stringify(data),
             contentType: 'application/json; charset=utf-8',
@@ -49,18 +48,4 @@ $(".feedback__form").submit((event) => {
         // Показываем ошибку под конкретной формой
         $("#feedback-form-error").text(error).show()
     })
-
-    // Функция авторизации
-    $.ajax({
-        url: "http://127.0.0.1:5000/people",
-        method: "POST",
-        data: JSON.stringify(data),
-        contentType: 'application/json; charset=utf-8',
-        dataType: "json",
-        success: (data) => {
-            console.log(data);
-            console.log("success");
-        },
-    })
-    
 })
