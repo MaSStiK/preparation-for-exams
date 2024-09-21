@@ -79,7 +79,7 @@
 }
 
 /* Ответ */
-.question p {
+.question > p {
     padding: 0 88px 21px 48px;
 }
 
