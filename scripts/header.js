@@ -6,6 +6,7 @@ $("header ul").on("click tap", "a", function(event) {
     $("body").css("overflow", "auto")
     $(".nav-bg").removeClass("opened")
 
+    // Прокручиваем страницу до нужной секции
     let href = $(this).attr("href")
     document.querySelector(href).scrollIntoView({behavior: "smooth"})
 })
