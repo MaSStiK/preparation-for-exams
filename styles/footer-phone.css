@@ -4,6 +4,10 @@
         height: 192px;
         padding: 16px;
     }
+
+    .footer-inner {
+        width: min(420px, 100%);
+    }
     
     .footer-info {
         flex-direction: column-reverse;
