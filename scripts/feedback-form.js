@@ -56,9 +56,7 @@ $(".feedback__form").submit((event) => {
 // Отображаем текст после отправки формы
 function FBFormSuccess() {
     $(".feedback__form").remove()
-
     $(".feedback__form-success").remove() // Фикс бага с двойным отображением текста
-
     $(".feedback-inner").append(`
         <div class="feedback__form-success">
             <h2>Заявка успешно отправлена!</h2>
