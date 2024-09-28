@@ -65,9 +65,6 @@ $(".info__form").submit((event) => {
                 infoFormSuccess()
             }
         })
-
-        localStorage.infoFormSuccess = "true"
-        infoFormSuccess()
     })
     .catch(error => {
         // Показываем ошибку под конкретной формой

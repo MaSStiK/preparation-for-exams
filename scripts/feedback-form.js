@@ -43,9 +43,6 @@ $(".feedback__form").submit((event) => {
                 FBFormSuccess()
             }
         })
-
-        localStorage.FBFormSuccess = "true"
-        FBFormSuccess()
     })
     .catch(error => {
         // Показываем ошибку под конкретной формой
