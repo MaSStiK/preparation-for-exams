@@ -68,8 +68,8 @@ function FBFormSuccess() {
 }
 
 // Если форма отправлена
-if (!localStorage.FBFormSuccess) {
+if (localStorage.FBFormSuccess) {
     FBFormSuccess()
 } else {
-    // $(".feedback__form").css("visibility", "visible")
+    $(".feedback__form").css("visibility", "visible")
 }
