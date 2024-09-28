@@ -15,11 +15,6 @@
         border-radius: 4px;
     }
 
-    /* Последний вопрос меньше по высоте */
-    .question:last-of-type {
-        max-height: 24px;
-    }
-    
     /* Текст вопроса */
     .question button {
         width: 100%;
@@ -57,11 +52,6 @@
         background-size: 11px 7px;
     }
 
-    /* У последнего вопроса стрелочка выше */
-    .question:last-of-type button::before {
-        top: 7px;
-    }
-    
     /* Ответ */
     .question > p {
         padding: 4px 17px;
