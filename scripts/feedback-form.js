@@ -21,7 +21,7 @@ $(".feedback__form").submit((event) => {
     const formPhone = FBPhoneMask.unmaskedValue.trim()
     const formQuestion = formData.get("feedback-question").trim() || "Без вопроса"
 
-    // Проверяем валидность  полей
+    // Проверяем валидность полей
     validateForm(formName, formPhone, formQuestion).then(() => {
         // Если все проверки прошло - отключаем кнопку и ждем ответа от сервера
         $("#feedback-form-submit").attr("disabled", true)

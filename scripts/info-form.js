@@ -43,7 +43,7 @@ $(".info__form").submit((event) => {
     const formPhone = infoPhoneMask.unmaskedValue.trim()
     const formQuestion = "Без вопроса"
 
-    // Проверяем валидность  полей
+    // Проверяем валидность полей
     validateForm(formName, formPhone, formQuestion).then(() => {
         // Если все проверки прошло - отключаем кнопку и ждем ответа от сервера
         $("#info-form-submit").attr("disabled", true)
