@@ -16,7 +16,7 @@
 - **Период разработки:** Сентябрь 2025
 - **Роль:** Frontend Developer
 - **Команда:** Designer, Backend Developer
-- **Основные технологии:** JavaScript, jQuery, IMask.js
+- **Основные технологии:** JavaScript, jQuery
 
 ## 👨‍💻 Выполненные задачи
 
