@@ -118,7 +118,7 @@ button:disabled {
     }
 
     button.gray:active {
-        background-color: var(--button-hover-gray);
+        background-color: var(--button-gray-hover);
     }
 
     button:disabled:active {
